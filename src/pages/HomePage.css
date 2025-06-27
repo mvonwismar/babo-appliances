@@ -1,0 +1,240 @@
+.homepage {
+  overflow-x: hidden;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--cream) 0%, var(--white) 100%);
+  padding: 4rem 0;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  color: var(--babson-green);
+  margin-bottom: 1.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--jet-black);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mission {
+  background-color: var(--white);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.mission h2 {
+  color: var(--babson-green);
+  margin-bottom: 1.5rem;
+}
+
+.mission-text {
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+
+.why-babo {
+  background-color: var(--light-gray);
+  padding: 4rem 0;
+}
+
+.why-babo h2 {
+  text-align: center;
+  color: var(--babson-green);
+  margin-bottom: 3rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.feature-card {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-weight: 600;
+  color: var(--jet-black);
+}
+
+.disclaimer {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 2rem;
+}
+
+.shop-preview {
+  padding: 4rem 0;
+  background-color: var(--white);
+}
+
+.shop-preview h2 {
+  text-align: center;
+  color: var(--babson-green);
+  margin-bottom: 3rem;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.preview-card {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.preview-card h3 {
+  color: var(--babson-green);
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 0.5rem;
+}
+
+.preview-card .btn {
+  margin-top: 1rem;
+}
+
+.bundle-deal {
+  background-color: var(--babson-green);
+  color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.bundle-deal h3 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.bundle-deal p {
+  margin-bottom: 0.5rem;
+}
+
+.how-it-works {
+  background-color: var(--cream);
+  padding: 4rem 0;
+}
+
+.how-it-works h2 {
+  text-align: center;
+  color: var(--babson-green);
+  margin-bottom: 3rem;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.step {
+  text-align: center;
+}
+
+.step-number {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: var(--babson-green);
+  color: var(--white);
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.step p {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 0;
+    min-height: auto;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero-buttons .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .features-grid,
+  .preview-grid,
+  .steps-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .mission,
+  .why-babo,
+  .shop-preview,
+  .how-it-works {
+    padding: 3rem 0;
+  }
+}

@@ -1,0 +1,121 @@
+.about-page {
+  padding: 2rem 0 4rem;
+}
+
+.about-page h1 {
+  text-align: center;
+  color: var(--babson-green);
+  margin-bottom: 3rem;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-section h2 {
+  color: var(--babson-green);
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+}
+
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--soft-gray);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.benefits-list li:last-child {
+  border-bottom: none;
+}
+
+.benefits-list strong {
+  color: var(--babson-green);
+  display: inline-block;
+  min-width: 120px;
+}
+
+.team-section {
+  background-color: var(--light-gray);
+  padding: 2rem;
+  border-radius: 12px;
+  margin-bottom: 3rem;
+}
+
+.impact-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.impact-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.stat {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stat h3 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.stat p {
+  color: #666;
+  font-weight: 500;
+}
+
+.cta-section {
+  text-align: center;
+  background-color: var(--cream);
+  padding: 3rem;
+  border-radius: 16px;
+}
+
+.cta-section h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    padding: 0 1rem;
+  }
+  
+  .impact-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-section {
+    padding: 1.5rem;
+  }
+  
+  .cta-section {
+    padding: 2rem 1.5rem;
+  }
+}
