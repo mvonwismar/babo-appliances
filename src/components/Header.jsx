@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState } from 'react'
+import { BASE_URL } from '../config'
 import './Header.css'
 
 function Header() {
@@ -23,7 +24,7 @@ function Header() {
       <div className="container">
         <nav className="nav">
           <Link to="/" className="logo">
-            <img src="/images/logo.png" alt="Babo Beaver" className="logo-img" />
+            <img src={`${BASE_URL}images/logo.png`} alt="Babo Beaver" className="logo-img" />
             <span className="logo-text">Babo Appliances</span>
           </Link>
           

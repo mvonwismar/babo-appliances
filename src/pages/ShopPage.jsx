@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { BASE_URL } from '../config'
 import './ShopPage.css'
 
 function ShopPage() {
@@ -10,7 +11,7 @@ function ShopPage() {
       id: 1,
       tier: '🥇 Tier 1',
       name: 'The Starter',
-      image: '/images/c9f70ba8a526c65d390d77ab41a9c30b1a-magic-chef-refrigerator.2x.h473.w710.webp',
+      image: `${BASE_URL}images/c9f70ba8a526c65d390d77ab41a9c30b1a-magic-chef-refrigerator.2x.h473.w710.webp`,
       buyPrice: 100,
       buyOldPrice: 150,
       rentPrice: 60,
@@ -21,7 +22,7 @@ function ShopPage() {
       id: 2,
       tier: '🥈 Tier 2',
       name: 'The Classic',
-      image: '/images/h16mrs-honeywell-mini-fridge-with-freezer-stainless-steel-1.jpg',
+      image: `${BASE_URL}images/h16mrs-honeywell-mini-fridge-with-freezer-stainless-steel-1.jpg`,
       buyPrice: 125,
       buyOldPrice: 175,
       rentPrice: 80,
@@ -32,7 +33,7 @@ function ShopPage() {
       id: 3,
       tier: '🥇 Tier 3',
       name: 'The Pro',
-      image: '/images/stainless-vissani-mini-fridges-hvdr31gse-64_1000.avif',
+      image: `${BASE_URL}images/stainless-vissani-mini-fridges-hvdr31gse-64_1000.avif`,
       buyPrice: 150,
       buyOldPrice: 200,
       rentPrice: 100,
@@ -43,7 +44,7 @@ function ShopPage() {
       id: 4,
       tier: '🥉 Tier 4',
       name: 'The Deluxe',
-      image: '/images/stainless-vissani-mini-fridges-hvdr31gse-64_1000.avif',
+      image: `${BASE_URL}images/stainless-vissani-mini-fridges-hvdr31gse-64_1000.avif`,
       buyPrice: 200,
       buyOldPrice: 300,
       rentPrice: 125,
@@ -55,7 +56,7 @@ function ShopPage() {
   const microwave = {
     id: 5,
     name: '🔥 Microwave',
-    image: '/images/24927621_HMV8054U-Bosch-microwave-stainless_steel-right_angle_def.png',
+    image: `${BASE_URL}images/24927621_HMV8054U-Bosch-microwave-stainless_steel-right_angle_def.png`,
     buyPrice: 75,
     rentPrice: 50,
     description: 'Compact, dorm-safe microwaves available with any fridge order'
