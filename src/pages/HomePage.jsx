@@ -30,7 +30,7 @@ function HomePage() {
 
       <section className="mission">
         <div className="container">
-          <h2>🌿 From Landfill to Dorm Life</h2>
+          <h2>🌿 Giving Fridges a Second Chance</h2>
           <p className="mission-text">
             Every year, dozens of perfectly good fridges are thrown out. We rescued them, 
             cleaned them, and built Babo to give them a second life — saving students 

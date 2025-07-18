@@ -51,6 +51,9 @@ function AboutPage() {
             <p>
               We're three Babson juniors passionate about sustainability and helping our community. 
               What started as a simple observation about waste on campus has grown into a 
+                    <div className="fridge-disclaimer">
+                        <strong>Important:</strong> All fridges are used and may have small dents, scratches, or stickers from previous use. These cosmetic imperfections do not affect functionality. Please be aware of this before purchasing—there are <u>no refunds</u> for appearance. We want to be fully transparent so no one feels misled or scammed. If you have any concerns, please ask before paying!
+                    </div>
               business that serves dozens of students each year.
             </p>
           </div>
